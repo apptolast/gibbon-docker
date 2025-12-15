@@ -1,6 +1,6 @@
-FROM php:7.4-apache
+FROM php:8.2-apache
 
-ENV VERSION=29.0.00
+ENV VERSION=30.0.00
 
 WORKDIR /var/www/html/
 
