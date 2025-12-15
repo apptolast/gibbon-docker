@@ -2,7 +2,7 @@
 set -e
 
 echo "Waiting for mysql server $DB_HOST ..."
-while ! mysqladmin ping -h"$DB_HOST" --silent; do
+while ! mysqladmin ping -h"$DB_HOST" --silent --skip-ssl 2>/dev/null; do
     sleep 1
     echo "still waiting..."
 done
